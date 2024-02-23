@@ -7,16 +7,15 @@ function getHours(){
     var minutes = clock.getMinutes();
     var seconds = clock.getSeconds();
 
-    const p_hour = document.getElementById("hour");
-    p_hour.innerHTML = hour + ":";
-    const p_minutes = document.getElementById("minutes");
-    p_minutes.innerHTML = minutes + ":";
+    var hour = formatTimeUnit(clock.getHours());
+    var minutes = formatTimeUnit(clock.getMinutes());
+    var seconds = formatTimeUnit(clock.getSeconds());
 
-    if(seconds < 10){
-        seconds = "0" + seconds;
-    }
-
-    const p_seconds = document.getElementById("seconds");
-    p_seconds.innerHTML = seconds;
+    document.getElementById("hour").innerHTML = hour + ":";
+    document.getElementById("minutes").innerHTML = minutes + ":";
+    document.getElementById("seconds").innerHTML = seconds;
 }
 
+function formatTimeUnit(unit) {
+    return unit < 10 ? "0" + unit : unit;
+}
