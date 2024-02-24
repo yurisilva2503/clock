@@ -34,14 +34,14 @@ div.main-title {
     justify-content: center;
 }
 
-h1#title {
+#title {
     text-shadow: 3px 3px 1px #000;
     font-family: 'Barett Street';
     font-weight: 400;
     font-size: 12em;
 }
 
-section#clock {
+#clock {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ section#clock {
     background-color: #00000096;
 }
 
-section#clock > p {
+#clock > p {
     font-family: 'Orbitron', sans-serif;
     font-size: 3em;
     color: #ffffff;
