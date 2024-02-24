@@ -19,6 +19,7 @@ body {
     background-image: url('../images/background.jpg');
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
 div.main-wrapper{
@@ -30,6 +31,8 @@ div.main-wrapper{
 div.main-title{
     display: flex;
     justify-content: center;
+    
+    padding-bottom: 14px;
 }
 
 h1.title{
