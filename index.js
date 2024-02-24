@@ -36,9 +36,9 @@ function formatTimeUnit(unit) {
 }
 
 function dayPeriod(value){
-    if (value >= 5 && value < 12){
+    if (value >= 5 && value <= 12){
         return "day";
-    } else if (value >= 12 && value < 18){
+    } else if (value > 12 && value < 18){
         return "afternoon"
     } else {
         return "night";
